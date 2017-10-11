@@ -1,2 +1,4 @@
 .sass-cache/
+assets/.sass-cache
+assets/.sass-cache/*
 *.css.map

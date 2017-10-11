@@ -1,0 +1,174 @@
+body {
+  font-family: $lato;
+  font-weight: $regular;
+  font-size: $body-size;
+}
+
+textarea {
+  font-family: $lato;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px
+}
+
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 9px 20px;
+  border: 1px solid;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: $magenta;
+  transition: background 0.2s;
+  cursor: pointer;
+  &.cancel, &.accept:hover, &.form-submit:hover {
+    background: $white;
+    color: $magenta;
+  }
+  &.accept, &.form-submit, &.cancel:hover {
+    background: $magenta;
+    color: $white;
+  }
+}
+
+ul.notes-list {
+  margin: 20px 0 20px;
+  li {
+    border: 1px solid $magenta;
+    border-bottom: 0;
+    padding: 20px 20px 50px;
+    position: relative;
+    .no-items-message {
+      line-height: 25px;
+      color: #666;
+      &.wrong-response-payload {
+        color: $warning;
+      }
+    }
+    &:last-child {
+      border-bottom: 1px solid $magenta;
+    }
+    h3.note-title {
+      font-weight: bold;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 10px;
+      font-size: 13px;
+      padding: 6px 13px;
+      &.cancel {
+        right: 10px;
+      }
+      &.accept {
+        right: 66px;
+      }
+    }
+
+  }
+}
+
+input.form-control, textarea.form-control {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px 7px;
+}
+
+textarea.form-control {
+  & + span.err {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    height: 0;
+  }
+}
+
+span.err {
+  font-size: 11px;
+  position: absolute;
+  color: #BB6DBB;
+  top: 41px;
+}
+
+div.field-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.notes-tracker-header {
+  .show-signout-button {
+    position: relative;
+    .sign-out {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: inline-block;
+    }
+  }
+
+  .sign-out {
+    display: none;
+  }
+}
+
+.show-signout-button {
+  position: relative;
+  .sign-out {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.credentials-form {
+  .signup-link, .signin-link {
+    display: none;
+  }
+  &.show-signup-link {
+    .signup-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: underline;
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+  &.show-signin-link {
+    .signin-link {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: underline;
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.notes-warning-state {
+  color: $warning;
+  border: 1px solid $warning;
+  padding: 10px;
+  margin-bottom: 30px;
+}

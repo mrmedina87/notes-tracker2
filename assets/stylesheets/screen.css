@@ -1,0 +1,278 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/_header.scss */
+.notes-tracker-header {
+  background: #BB6DBB;
+  color: #FFFFFF;
+}
+
+/* line 1, ../sass/_general.scss */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 7, ../sass/_general.scss */
+textarea {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 11, ../sass/_general.scss */
+div {
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/_general.scss */
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* line 20, ../sass/_general.scss */
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+
+/* line 25, ../sass/_general.scss */
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* line 30, ../sass/_general.scss */
+.btn {
+  padding: 9px 20px;
+  border: 1px solid;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: #BB6DBB;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+/* line 40, ../sass/_general.scss */
+.btn.cancel, .btn.accept:hover, .btn.form-submit:hover {
+  background: #FFFFFF;
+  color: #BB6DBB;
+}
+/* line 44, ../sass/_general.scss */
+.btn.accept, .btn.form-submit, .btn.cancel:hover {
+  background: #BB6DBB;
+  color: #FFFFFF;
+}
+
+/* line 50, ../sass/_general.scss */
+ul.notes-list {
+  margin: 20px 0 20px;
+}
+/* line 52, ../sass/_general.scss */
+ul.notes-list li {
+  border: 1px solid #BB6DBB;
+  border-bottom: 0;
+  padding: 20px 20px 50px;
+  position: relative;
+}
+/* line 57, ../sass/_general.scss */
+ul.notes-list li .no-items-message {
+  line-height: 25px;
+  color: #666;
+}
+/* line 60, ../sass/_general.scss */
+ul.notes-list li .no-items-message.wrong-response-payload {
+  color: #FF0000;
+}
+/* line 64, ../sass/_general.scss */
+ul.notes-list li:last-child {
+  border-bottom: 1px solid #BB6DBB;
+}
+/* line 67, ../sass/_general.scss */
+ul.notes-list li h3.note-title {
+  font-weight: bold;
+}
+/* line 71, ../sass/_general.scss */
+ul.notes-list li .btn {
+  position: absolute;
+  bottom: 10px;
+  font-size: 13px;
+  padding: 6px 13px;
+}
+/* line 76, ../sass/_general.scss */
+ul.notes-list li .btn.cancel {
+  right: 10px;
+}
+/* line 79, ../sass/_general.scss */
+ul.notes-list li .btn.accept {
+  right: 66px;
+}
+
+/* line 87, ../sass/_general.scss */
+input.form-control, textarea.form-control {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px 7px;
+}
+
+/* line 96, ../sass/_general.scss */
+textarea.form-control + span.err {
+  position: relative;
+  top: -15px;
+  display: inline-block;
+  height: 0;
+}
+
+/* line 104, ../sass/_general.scss */
+span.err {
+  font-size: 11px;
+  position: absolute;
+  color: #BB6DBB;
+  top: 41px;
+}
+
+/* line 111, ../sass/_general.scss */
+div.field-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* line 117, ../sass/_general.scss */
+.notes-tracker-header .show-signout-button {
+  position: relative;
+}
+/* line 119, ../sass/_general.scss */
+.notes-tracker-header .show-signout-button .sign-out {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: inline-block;
+}
+/* line 127, ../sass/_general.scss */
+.notes-tracker-header .sign-out {
+  display: none;
+}
+
+/* line 132, ../sass/_general.scss */
+.show-signout-button {
+  position: relative;
+}
+/* line 134, ../sass/_general.scss */
+.show-signout-button .sign-out {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* line 142, ../sass/_general.scss */
+.credentials-form .signup-link, .credentials-form .signin-link {
+  display: none;
+}
+/* line 146, ../sass/_general.scss */
+.credentials-form.show-signup-link .signup-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+/* line 150, ../sass/_general.scss */
+.credentials-form.show-signup-link .signup-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 157, ../sass/_general.scss */
+.credentials-form.show-signin-link .signin-link {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+/* line 161, ../sass/_general.scss */
+.credentials-form.show-signin-link .signin-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 169, ../sass/_general.scss */
+.notes-warning-state {
+  color: #FF0000;
+  border: 1px solid #FF0000;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* line 1, ../sass/_frame.scss */
+.frame {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 20px;
+}

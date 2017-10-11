@@ -1,0 +1,57 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NotesTracker</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/stylesheets/screen.css">
+</head>
+<body>
+  <header class="notes-tracker-header">
+    <div class="frame">
+      <h1>Kitchen Sink</h1>
+      <span>header.notes-tracker-header > .frame > h1</span>
+    </div>
+  </header>
+  <section>
+    <div class="frame">
+      <button class="cancel btn">.btn.cancel</button>
+      <button class="accept btn">.btn.accept</button>
+      <ul class="notes-list">
+        <li>
+          <h3 class="note-title">ul.notes-list > li >h3.note-title</h3>
+          <p class="note-body">ul.notes-list > li >  p.note-body</p>
+          <button class="cancel btn">edit</button>
+          <button class="accept btn">delete</button>
+        </li>
+        <li>
+          <h3 class="note-title">title</h3>
+          <p class="note-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo officiis fuga aspernatur eum iste, impedit quas excepturi, voluptatibus aut tempore.</p>
+        </li>
+        <li>
+          <h3 class="note-title">title</h3>
+          <p class="note-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut itaque veritatis iste. Necessitatibus eos ipsum, veritatis nostrum, architecto labore tenetur.</p>
+        </li>
+        <li>
+          <h3 class="note-title">title</h3>
+          <p class="note-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At natus veritatis quidem, doloremque dicta asperiores, nemo saepe recusandae porro consequatur.</p>
+        </li>
+      </ul>
+      <form action="" class="notes-form">
+        <div class="field-wrapper">
+          <input type="email" class="form-control user" placeholder="input.form-control" required>
+          <span class="err">input.form-control + span.error</span>
+        </div>
+        <div class="field-wrapper">
+          <input type="password" class="form-control password" placeholder="input.form-control" required>
+          <span class="err">input.form-control + span.error</span>
+        </div>
+        <textarea class="form-control" placeholder="textarea.form-control"></textarea>
+        <button class="btn form-submit">button.btn.form-submit</button>
+      </form>
+    </div>
+  </section>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js">
+  </script>
+</body>
+</html>
