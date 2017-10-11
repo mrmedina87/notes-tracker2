@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 In order to edit styles, you will have to:
 
-1) Install compass 
+1) Install compass (it runs sass code)
 2) Using your console, go to your vhost folder
 3) Run this command line:
  compass watch assets
@@ -52,12 +52,12 @@ In order to edit styles, you will have to:
 
 This project was developed to show my skillset.
 
-The front-end layer was developed using HTML5, Compass and jQuery. Previous version used two arrays to mockup the backend, but in this new version we do have a back-end so we use ajax to communicate against the REST API. The solution consists on a Module Pattern object where we make public just one method: start. When start runs the application is executed.
-The init method is called the first time by start, and will be called every time the app changes between the different views (states), and this method is also in charge of hiding and showing different parts of the DOM depending on the view.
+The front-end layer was developed using HTML5, Sass and jQuery. Previous version used two arrays to mockup the backend, but in this new version we do have a back-end so we use ajax to communicate against the REST API. The solution consists on a Module Pattern object where we make public just one method: start. When "start" runs the application is executed.
+The "init" method is called the first time by "start", and will be called every time the app changes between its different views (states), and this method (init) is also in charge of hiding and showing different parts of the DOM depending on the current view.
 
 The back-end was implemented using plain PHP to build a RESTful interface that handle requests depending on their HTTP-verbs. It also uses a jwt algorithm to generate a token to handle authentication. 
 
 I based my jwt solution on this implementation of the encrypt/decrypt generator: https://github.com/firebase/php-jwt
 
-Authentication header is required when dealing with the RESTful resource "note".
+Authorization header is required when dealing with the RESTful resource "note".
 Finally, interaction against database entity was implemented using mysqli and prepared statements to avoid sql injection.
