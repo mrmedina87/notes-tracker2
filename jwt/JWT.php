@@ -1,5 +1,7 @@
 <?php
 
+// Based on the solution implemented here: https://github.com/firebase/php-jwt
+
 namespace Firebase\JWT;
 use \DomainException;
 use \InvalidArgumentException;
