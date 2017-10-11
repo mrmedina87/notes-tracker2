@@ -12,6 +12,7 @@ Notes tracker 2 is a webapp based on plain php and jquery. It allows any user to
 
 - So as to create the database and tables structure, run the following sql code in your phpmyadmin:
 
+```
 CREATE DATABASE IF NOT EXISTS `notestracker2` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `notestracker2`;
 
@@ -29,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+```
 
 - Go to http://notestracker2:8080 (replace here 8080 with your chosen port) 
 - Sign up to create a new user
